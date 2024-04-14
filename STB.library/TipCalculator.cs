@@ -5,6 +5,7 @@ public class TipCalculator
     public decimal SplitBill(decimal amount, int NumberOfPeople)
     {
         var result = amount / NumberOfPeople;
+
         return result;
     }
 
@@ -18,6 +19,15 @@ public class TipCalculator
 
             result.Add(share.Key, Tip);
         }
+        return result;
+    }
+
+    public decimal CalculateTipPerPerson(decimal TotalAmountOfBill, int NumberOfPersons, float TipPercentage)
+    {
+        decimal TotalTip = TotalAmountOfBill * (decimal)TipPercentage / 100;
+
+        var result = TotalTip / NumberOfPersons;
+
         return result;
     }
 }
