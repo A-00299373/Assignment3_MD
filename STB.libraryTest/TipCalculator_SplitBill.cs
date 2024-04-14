@@ -3,7 +3,7 @@ using STB.library;
 namespace STB.libraryTest;
 
 [TestClass]
-public class SplitBillTest
+public class TipCalculator_SplitBill
 {
     [TestMethod]
     public void SplitBill_Method_Receives_Total_Amount_Of_Bill_By_Number_of_People_Should_Return_Split_Amount()
