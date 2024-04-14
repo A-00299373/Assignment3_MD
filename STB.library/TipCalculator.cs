@@ -7,6 +7,4 @@ public class TipCalculator
         var result = amount / NumberOfPeople;
         return result;
     }
-
-    
 }
